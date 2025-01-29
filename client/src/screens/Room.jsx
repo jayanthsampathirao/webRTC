@@ -61,7 +61,7 @@ const RoomPage = () => {
         peer.peer.addEventListener('track',async ev=>{
             const remoteStream = ev.streams
             setRemoteStream(remoteStream[0]);
-        })
+        }) 
     },[])
     useEffect(() => {
         socket.on('user:joined', handleUserJoined);
